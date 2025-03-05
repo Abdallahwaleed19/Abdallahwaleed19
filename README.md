@@ -6,14 +6,14 @@
 - 😄 Pronouns: he/him
 
 👋 Hi, I'm Abdallah Waleed Kamal Mousa Salem
-🎓 IoT & Big Data Analytics Student | 💡 IoT Applications Developer | 🤖 Robotics & Smart Technology Enthusiast
+🎓 IoT & Big Data Analytics Student | 💡 IoT Applications Developer | 🤖 Robotics 
 
 🚀 About Me
 I am an aspiring Internet of Things (IoT) Applications Developer with a strong background in networking, Python, Java, and Big Data Analytics. Currently, I am pursuing my degree in Artificial Intelligence at Minufiya National University, specializing in IoT and Big Data Analytics. I am passionate about building innovative IoT solutions, developing smart systems, and exploring new technologies.
 
 🔧 Skills & Technologies
 Programming Languages: Python, Java, C, Dart
-IoT & Embedded Systems: Arduino, Raspberry Pi, MQTT, Node-RED
+IoT & Embedded Systems: Arduino,MQTT, Node-RED
 Robotics & Automation: Robotics Programming, MOT Custom Events & Plugins
 Networking & Security: CCNA Certified (Networking & Security)
 Big Data & Analytics: Data Science, Data Structures, AI & Machine Learning
@@ -34,7 +34,7 @@ Robotics Programming (February 2025 - March 2025)
 
 📫 Connect with Me
 💼 LinkedIn: linkedin.com/in/abdallah-waleed-885089293
-📧 Email: waleedabdallah238@gmail.com
+📧 Email: waleedabdallah238@gmail.com | abdallahwaleed238@outlook.com
 📞 Phone: +201005831772
 
 🔹 Always open to collaborations, new opportunities, and tech discussions!
