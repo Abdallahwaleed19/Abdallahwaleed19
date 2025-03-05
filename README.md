@@ -72,7 +72,8 @@ Topics Covered: IoT, Data Science, Machine Learning, SOLID Principles, and Testi
 🤝 Contributions
 Feel free to fork this repository and contribute improvements! 😊
 📧 Contact
-LinkedIn: Abdallah Waleed
-GitHub: Abdallahwaleed19
+## 📧 Contact
+- **LinkedIn:** [Abdallah Waleed](https://www.linkedin.com/in/abdallah-waleed-885089293)
+- **GitHub:** [Abdallahwaleed19](https://github.com/Abdallahwaleed19)
 Happy Coding! 🚀
 
