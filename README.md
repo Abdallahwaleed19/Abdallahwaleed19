@@ -13,8 +13,7 @@
 <img align="right" height="150" src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" alt="boy animation" />
 
 <!-- Enemy Boy GIF -->
-<img align="right" height="150" src="https://media.giphy.com/media/xUOxf48tP3f8qOKGXS/giphy.gif" alt="enemy boy animation" />
-
+<img align="right" height="150" src="https://media.giphy.com/media/3o7qE1YN7aBOFPRw8E/giphy.gif" alt="friendly robot" />
 
 ###
 
