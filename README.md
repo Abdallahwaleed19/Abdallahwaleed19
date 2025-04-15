@@ -1,4 +1,4 @@
-<h2 align="left">Hi 👋! My name is Abdallah and I'm a Student at Faculty of Computers & Artificial Intelligence and My Major is IoT & Big Data Analytics, from Shibin Elkom</h2>
+<h2 align="left">Hi 👋! My name is Abdallah and I'm a Student at Faculty of Computers & Artificial Intelligence and My Major is IoT & Big Data Analytics , from Shibin Elkom</h2>
 
 ###
 
@@ -9,12 +9,16 @@
 
 ###
 
+<!-- Main Boy GIF -->
 <img align="right" height="150" src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" alt="boy animation" />
+
+<!-- Enemy Boy GIF -->
+<img align="right" height="150" src="https://media.giphy.com/media/WFZvB7VIXBgiz3oDXE/giphy.gif" alt="enemy boy animation" />
 
 ###
 
 <div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" height="30" alt="dart logo" />
   <img width="12" />
@@ -31,16 +35,16 @@
 
 <div align="left">
   <a href="https://www.linkedin.com/in/abdallah-waleed-885089293" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo" />
+    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
   </a>
   <a href="mailto:your-waleedabdallah238@gmail.com">
-    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo" />
+    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo"  />
   </a>
   <a href="https://www.instagram.com/__abdallahwaleed" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo" />
+    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo"  />
   </a>
   <a href="mailto:your-abdallahwaleed238@outlook.com">
-    <img src="https://img.shields.io/static/v1?message=Outlook&logo=microsoft-outlook&label=&color=0072C6&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="outlook logo" />
+    <img src="https://img.shields.io/static/v1?message=Outlook&logo=microsoft-outlook&label=&color=0072C6&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="outlook logo"  />
   </a>
 </div>
 
@@ -49,5 +53,4 @@
 <br clear="both">
 
 <img src="https://raw.githubusercontent.com/Abdallahwaleed19/Abdallahwaleed19/output/github-snake.svg" alt="Snake animation" />
-
 
