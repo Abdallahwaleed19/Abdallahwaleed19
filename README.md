@@ -1,4 +1,4 @@
-<h2 align="left">Hi 👋! My name is Abdallah and I'm a Student at Faculty of Computers & Artificial Intelligence and I Interested in IoT & Big Data Analysis , from Shibin Elkom</h2>
+<h2 align="left">Hi 👋! My name is Abdallah and I'm a Student at Faculty of Computers & Artificial Intelligence, from Shibin Elkom</h2>
 
 ###
 
@@ -9,7 +9,8 @@
 
 ###
 
-<img align="right" height="150" src="https://i.imgflip.com/65efz5.gif"  />  <!-- Changed to boy GIF -->
+<!-- Replaced the previous GIF with a boy GIF -->
+<img align="right" height="150" src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" alt="boy animation"  />
 
 ###
 
@@ -44,7 +45,6 @@
 
 <br clear="both">
 
-<img src="https://raw.githubusercontent.com/Abdallahwaleed19/Abdallahwaleed19/output/snake.svg" alt="Snake animation" />
+<img src="https://raw.githubusercontent.com/Abdallahwaleed19/Abdallahwaleed19/output/github-snake.svg" alt="Snake animation" />
 
-###
 
