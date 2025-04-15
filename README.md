@@ -1,4 +1,4 @@
-<h2 align="left">Hi 👋! My name is Abdallah and I'm a Studnt at Faculty of Computers & Artificial intelligence, from Shibin Elkom </h2>
+<h2 align="left">Hi 👋! My name is Abdallah and I'm a Student at Faculty of Computers & Artificial Intelligence and I Interested in IoT & Big Data Analysis , from Shibin Elkom</h2>
 
 ###
 
@@ -9,7 +9,7 @@
 
 ###
 
-<img align="right" height="150" src="https://i.imgflip.com/65efzo.gif"  />
+<img align="right" height="150" src="https://i.imgflip.com/65efz5.gif"  />  <!-- Changed to boy GIF -->
 
 ###
 
@@ -26,7 +26,7 @@
 ###
 
 <div align="left">
-  <a href="www.linkedin.com/in/abdallah-waleed-885089293" target="_blank">
+  <a href="https://www.linkedin.com/in/abdallah-waleed-885089293" target="_blank">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
   </a>
   <a href="mailto:your-waleedabdallah238@gmail.com">
