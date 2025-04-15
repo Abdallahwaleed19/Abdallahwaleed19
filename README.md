@@ -1,4 +1,4 @@
-<h2 align="left">Hi 👋! My name is Abdallah and I'm a Student at Faculty of Computers & Artificial Intelligence, from Shibin Elkom</h2>
+<h2 align="left">Hi 👋! My name is Abdallah and I'm a Student at Faculty of Computers & Artificial Intelligence and My Major is IoT & Big Data Analytics , from Shibin Elkom</h2>
 
 ###
 
