@@ -45,7 +45,8 @@
 
 <br clear="both">
 
-<img src="https://raw.githubusercontent.com/Abdallahwaleed19/Abdallahwaleed19/output/ocean.gif" alt="Snake animation" />
+<img src="https://raw.githubusercontent.com/Abdallahwaleed19/Abdallahwaleed19/output/github-snake.svg" alt="Snake animation" />
+
 
 
 
