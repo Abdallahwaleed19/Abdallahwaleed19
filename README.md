@@ -1,4 +1,4 @@
-<h2 align="left">Hi 👋! My name is Abdallah and I'm a Student at Faculty of Computers & Artificial Intelligence and My Major is IoT & Big Data Analytics , from Shibin Elkom</h2>
+<h2 align="left">Hi 👋! My name is Abdallah and I'm Student at Faculty of Computers & Artificial Intelligence and My Major is IoT & Big Data Analytics , from Shibin Elkom</h2>
 
 ###
 
@@ -13,7 +13,8 @@
 <img align="right" height="150" src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" alt="boy animation" />
 
 <!-- Enemy Boy GIF -->
-<img align="right" height="150" src="https://media.giphy.com/media/WFZvB7VIXBgiz3oDXE/giphy.gif" alt="enemy boy animation" />
+<img align="right" height="150" src="https://media.giphy.com/media/xUOxf48tP3f8qOKGXS/giphy.gif" alt="enemy boy animation" />
+
 
 ###
 
