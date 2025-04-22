@@ -1,0 +1,257 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="dashboard">
+    <h1 class="text-center mb-5">Library Dashboard</h1>
+    
+    <div class="row g-4">
+        <!-- Stats Cards -->
+        <div class="col-md-3">
+            <div class="card stat-card">
+                <div class="card-body text-center">
+                    <i class="fas fa-book fa-3x text-primary mb-3"></i>
+                    <h2 class="count">{{ stats.books }}</h2>
+                    <h5 class="card-title">Total Books</h5>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3">
+            <div class="card stat-card">
+                <div class="card-body text-center">
+                    <i class="fas fa-users fa-3x text-success mb-3"></i>
+                    <h2 class="count">{{ stats.customers }}</h2>
+                    <h5 class="card-title">Customers</h5>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3">
+            <div class="card stat-card">
+                <div class="card-body text-center">
+                    <i class="fas fa-building fa-3x text-warning mb-3"></i>
+                    <h2 class="count">{{ stats.branches }}</h2>
+                    <h5 class="card-title">Branches</h5>
+                    <button class="btn btn-sm btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#addBranchModal">
+                        Add Branch
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3">
+            <div class="card stat-card">
+                <div class="card-body text-center">
+                    <i class="fas fa-user-tie fa-3x text-info mb-3"></i>
+                    <h2 class="count">{{ stats.employees }}</h2>
+                    <h5 class="card-title">Employees</h5>
+                    <button class="btn btn-sm btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#addEmployeeModal">
+                        Add Employee
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Quick Actions -->
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <div class="card quick-actions">
+                <div class="card-header bg-primary text-white">
+                    <h4>Quick Actions</h4>
+                </div>
+                <div class="card-body">
+                    <div class="d-grid gap-2">
+                        <a href="{{ url_for('books') }}" class="btn btn-outline-primary">
+                            <i class="fas fa-book me-2"></i>Manage Books
+                        </a>
+                        <a href="{{ url_for('customers') }}" class="btn btn-outline-success">
+                            <i class="fas fa-users me-2"></i>Manage Customers
+                        </a>
+                        <button class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#checkoutModal">
+                            <i class="fas fa-exchange-alt me-2"></i>Checkout Books
+                        </button>
+                        <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#issueCardModal">
+                            <i class="fas fa-id-card me-2"></i>Issue Library Cards
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="card recent-activity">
+                <div class="card-header bg-success text-white">
+                    <h4>Recent Activity</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        {% for activity in recent_activities %}
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span>{{ activity.message }}</span>
+                            <small class="text-muted">{{ activity.time_ago }}</small>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Branch Modal -->
+<div class="modal fade" id="addBranchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add New Branch</h5>
+                <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#addBranchModal"></button>
+            </div>
+            <form method="POST" action="{{ url_for('add_branch') }}">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="branchName" class="form-label">Branch Name</label>
+                        <input type="text" class="form-control" id="branchName" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="branchLocation" class="form-label">Location</label>
+                        <input type="text" class="form-control" id="branchLocation" name="location" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="branchPhone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="branchPhone" name="phone" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Add Branch</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Add Employee Modal -->
+<div class="modal fade" id="addEmployeeModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add New Employee</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form method="POST" action="{{ url_for('add_employee') }}">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="empName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="empName" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="empRole" class="form-label">Role</label>
+                        <select class="form-select" id="empRole" name="role" required>
+                            <option value="">Select Role</option>
+                            <option value="Librarian">Librarian</option>
+                            <option value="Assistant">Assistant</option>
+                            <option value="Manager">Manager</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="empBranch" class="form-label">Branch</label>
+                        <select class="form-select" id="empBranch" name="branch_id" required>
+                            <option value="">Select Branch</option>
+                            {% for branch in all_branches %}
+                            <option value="{{ branch.id }}">{{ branch.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Add Employee</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Checkout Book Modal -->
+<div class="modal fade" id="checkoutModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Checkout Book</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form method="POST" action="{{ url_for('checkout_book') }}">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="customerSelect" class="form-label">Customer</label>
+                        <select class="form-select" id="customerSelect" name="customer_id" required>
+                            <option value="">Select Customer</option>
+                            {% for customer in all_customers %}
+                            <option value="{{ customer.id }}">{{ customer.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="bookSelect" class="form-label">Book</label>
+                        <select class="form-select" id="bookSelect" name="book_id" required>
+                            <option value="">Select Book</option>
+                            {% for book in available_books %}
+                            <option value="{{ book.id }}">{{ book.title }} by {{ book.author.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="dueDate" class="form-label">Due Date</label>
+                        <input type="date" class="form-control" id="dueDate" name="due_date" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Checkout</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Issue Library Card Modal -->
+<div class="modal fade" id="issueCardModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Issue Library Card</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form method="POST" action="{{ url_for('issue_library_card') }}">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="cardCustomer" class="form-label">Customer</label>
+                        <select class="form-select" id="cardCustomer" name="customer_id" required>
+                            <option value="">Select Customer</option>
+                            {% for customer in all_customers %}
+                            {% if not customer.library_card %}
+                            <option value="{{ customer.id }}">{{ customer.name }}</option>
+                            {% endif %}
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cardDuration" class="form-label">Duration (months)</label>
+                        <select class="form-select" id="cardDuration" name="duration" required>
+                            <option value="6">6 months</option>
+                            <option value="12" selected>1 year</option>
+                            <option value="24">2 years</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Issue Card</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
