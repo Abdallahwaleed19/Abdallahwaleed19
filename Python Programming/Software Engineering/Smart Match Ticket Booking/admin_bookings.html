@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block title %}All Bookings | Admin Panel{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="mb-0">All Customer Bookings</h2>
+        {# Add a button or link to refresh or filter later if needed #}
+    </div>
+
+    {% if bookings %}
+    <div class="table-responsive">
+        <table class="table table-striped table-hover shadow-sm rounded">
+            <thead class="table-dark">
+                <tr>
+                    <th>Booking ID</th>
+                    <th>Customer</th>
+                    <th>Email</th>
+                    <th>Match Title</th>
+                    <th>Match Date</th>
+                    <th>Booked On</th>
+                    <th>Ticket Code</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for booking in bookings %}
+                <tr>
+                    <td>{{ booking.id }}</td>
+                    <td>{{ booking.user.first_name }} {{ booking.user.last_name }}</td>
+                    <td>{{ booking.user.username }}</td> {# username stores the email #}
+                    <td>{{ booking.match.title }}</td>
+                    <td>{{ booking.match.date.strftime('%Y-%m-%d %H:%M') }}</td>
+                    <td>{{ booking.timestamp.strftime('%Y-%m-%d %H:%M') }}</td>
+                    <td>{{ booking.ticket_code }}</td>
+                    <td>
+                        {% if booking.paid %}
+                            <span class="badge bg-success">Paid</span>
+                        {% else %}
+                            <span class="badge bg-warning text-dark">Pending</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        <a href="{{ url_for('ticket_qr', booking_id=booking.id) }}" class="btn btn-sm btn-outline-primary" target="_blank" title="View QR Code">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-qr-code" viewBox="0 0 16 16">
+                                <path d="M2 2h2v2H2V2Z"/>
+                                <path d="M6 0v6H0V0h6ZM5 1H1v4h4V1ZM4 12H2v2h2v-2Z"/>
+                                <path d="M6 10v6H0v-6h6Zm-1 1H1v4h4v-4ZM16 0h-5v6h5V0h-5Zm-4 1h3v4h-3V1Zm0 11h3v4h-3v-4Zm1-4h2v2h-2Z"/>
+                                <path d="M10 10h6v6h-6v-6Zm1 1v4h4v-4h-4Z"/>
+                              </svg>
+                        </a>
+                        {# Add other actions like 'View Details' or 'Cancel Booking' if needed in the future #}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <div class="alert alert-info" role="alert">
+        No bookings have been made yet.
+    </div>
+    {% endif %}
+</div>
+{% endblock %} 

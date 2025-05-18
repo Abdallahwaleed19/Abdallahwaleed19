@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block title %}Manage Promotion Codes | Smart Match Booking{% endblock %}
+{% block content %}
+<div class="container mt-4">
+    <h2 class="mb-4">Manage Promotion Codes</h2>
+    <div class="card shadow-sm mb-4">
+        <div class="card-header">
+            <h4>Add New Promotion Code</h4>
+        </div>
+        <div class="card-body">
+            <form method="POST">
+                {{ form.hidden_tag() }}
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        {{ form.code.label(class="form-label") }}
+                        {{ form.code(class="form-control") }}
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        {{ form.discount.label(class="form-label") }}
+                        {{ form.discount(class="form-control") }}
+                    </div>
+                </div>
+                {{ form.submit(class="btn btn-primary") }}
+            </form>
+        </div>
+    </div>
+    <h4 class="mb-3">Existing Promotion Codes</h4>
+    {% if promotions %}
+    <div class="table-responsive">
+        <table class="table table-striped table-hover shadow-sm rounded">
+            <thead class="table-dark">
+                <tr>
+                    <th>Code</th>
+                    <th>Discount (%)</th>
+                    <th>Usage Count</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for promo in promotions %}
+                <tr>
+                    <td>{{ promo.code }}</td>
+                    <td>{{ promo.discount }}</td>
+                    <td>{{ promo.usage_count }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <div class="alert alert-info">No promotion codes available or used yet.</div>
+    {% endif %}
+</div>
+{% endblock %} 

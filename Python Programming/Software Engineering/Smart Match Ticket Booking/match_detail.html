@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block title %}{{ match.title }} | Smart Match Booking{% endblock %}
+{% block content %}
+<div class="row">
+  <div class="col-md-8">
+    <h2>{{ match.title }}</h2>
+    {% if match.team_a_image or match.team_b_image %}
+    <div class="d-flex align-items-center mb-3">
+      {% if match.team_a_image %}
+      <img src="{{ url_for('static', filename='uploads/' ~ match.team_a_image) }}" alt="Team A" class="img-thumbnail me-2" style="max-width: 100px;">
+      {% endif %}
+      <span class="fw-bold fs-4 mx-2">vs</span>
+      {% if match.team_b_image %}
+      <img src="{{ url_for('static', filename='uploads/' ~ match.team_b_image) }}" alt="Team B" class="img-thumbnail ms-2" style="max-width: 100px;">
+      {% endif %}
+    </div>
+    {% endif %}
+    {% if match.competition_info %}
+    <p class="text-muted mb-2"><em>{{ match.competition_info.name }}</em></p>
+    {% endif %}
+    <p><strong>Date:</strong> {{ match.date.strftime('%Y-%m-%d %H:%M') }}</p>
+    <p><strong>Location:</strong> {{ match.location }}</p>
+    <p><strong>Description:</strong> {{ match.description }}</p>
+    <p><strong>Price:</strong> ${{ match.price }}</p>
+    <p><strong>Tickets Available:</strong> {{ match.tickets_available }}</p>
+  </div>
+  <div class="col-md-4">
+    <div class="card p-3 shadow-sm">
+      <h5>Book This Match</h5>
+      {% if current_user.is_authenticated and not current_user.is_admin %}
+      <form method="POST">
+        {{ form.hidden_tag() }}
+        <button type="submit" class="btn btn-success w-100">Book Now</button>
+      </form>
+      {% elif current_user.is_authenticated and current_user.is_admin %}
+      <div class="alert alert-info">Admins cannot book tickets.</div>
+      {% else %}
+      <div class="alert alert-warning">Please <a href="{{ url_for('login') }}">log in</a> to book tickets.</div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %} 

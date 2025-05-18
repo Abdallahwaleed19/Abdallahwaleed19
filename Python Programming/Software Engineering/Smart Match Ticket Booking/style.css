@@ -1,0 +1,245 @@
+/* static/css/style.css */
+
+/* Modern Football-Themed UI */
+
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #e8f5e9 0%, #b2dfdb 100%);
+    /* Soft green/teal gradient */
+    color: #222;
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 70px;
+    overflow-x: hidden;
+}
+
+/* Football field background pattern */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background: url('https://svgshare.com/i/13kF.svg') repeat center center;
+    opacity: 0.12;
+    pointer-events: none;
+}
+
+/* Floating football shapes */
+.football-shape {
+    position: fixed;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.18;
+    animation: float 8s ease-in-out infinite;
+}
+
+.football-shape.shape1 {
+    top: 10%;
+    left: 5%;
+    width: 80px;
+    animation-delay: 0s;
+}
+
+.football-shape.shape2 {
+    top: 60%;
+    left: 80%;
+    width: 60px;
+    animation-delay: 2s;
+}
+
+.football-shape.shape3 {
+    top: 30%;
+    left: 50%;
+    width: 100px;
+    animation-delay: 4s;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-30px) scale(1.08);
+    }
+}
+
+/* Navbar Styling */
+.navbar {
+    background: linear-gradient(90deg, #212529 0%, #388e3c 100%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #fff !important;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: #e0f2f1 !important;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+}
+
+/* Container adjustments */
+.container,
+.container-fluid {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: 1rem;
+    transition: transform 0.25s cubic-bezier(.4, 2, .6, 1), box-shadow 0.2s;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(56, 142, 60, 0.08);
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 32px rgba(56, 142, 60, 0.18) !important;
+}
+
+.card-header {
+    background: linear-gradient(90deg, #388e3c 0%, #1976d2 100%);
+    color: #fff;
+    border-bottom: none;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.card-title {
+    color: #222;
+    margin-bottom: 0.75rem;
+}
+
+/* Button Styling */
+.btn-primary {
+    background: linear-gradient(90deg, #1976d2 0%, #388e3c 100%);
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #388e3c 0%, #1976d2 100%);
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.18);
+}
+
+.btn-success {
+    background: #43a047;
+    border: none;
+}
+
+.btn-success:hover {
+    background: #2e7031;
+}
+
+.btn-info {
+    background: #0288d1;
+    border: none;
+}
+
+.btn-info:hover {
+    background: #01579b;
+}
+
+.btn-danger {
+    background: #c62828;
+    border: none;
+}
+
+.btn-danger:hover {
+    background: #8e0000;
+}
+
+/* Forms */
+.form-control:focus {
+    border-color: #43a047;
+    box-shadow: 0 0 0 0.2rem rgba(67, 160, 71, .18);
+}
+
+/* Flash Messages */
+.alert {
+    border-radius: 0.75rem;
+    font-size: 1.05rem;
+}
+
+/* Table styling */
+.table {
+    background: #fff;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.table thead.table-dark th {
+    background: #1976d2;
+    color: #fff;
+    border-bottom: none;
+}
+
+.table tbody tr:hover {
+    background: #e8f5e9;
+}
+
+/* Responsive typography for headings */
+h1,
+.display-4 {
+    font-weight: 400;
+    color: #1976d2;
+    letter-spacing: 1px;
+}
+
+/* Footer styling */
+footer {
+    padding: 24px 0;
+    background: linear-gradient(90deg, #212529 0%, #388e3c 100%);
+    color: #e0f2f1;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.1rem;
+}
+
+/* Custom class for subtle shadow elevation on hover, can be added to elements */
+.hover-shadow-lg:hover {
+    box-shadow: 0 1.5rem 3rem rgba(56, 142, 60, .18) !important;
+}
+
+/* Utility for images - ensuring they are responsive */
+img.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Placeholder for match images if you add them */
+.match-image-placeholder {
+    width: 100%;
+    height: 200px;
+    background: #b2dfdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #388e3c;
+    font-size: 1.2rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+#toast-container {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1055;
+}
