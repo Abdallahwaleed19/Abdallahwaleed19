@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('C:/Users/Eng. Abdalla/Downloads/david-nicolai-ygchoNbpZIU-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-blog {
+    background: #8A2BE2;
+    padding: 8px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.cta-buttons {
+    margin-top: 30px;
+}
+
+.cta-buttons button {
+    padding: 12px 30px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.about-me {
+    background: #FF69B4;
+    color: white;
+}
+
+.read-blog {
+    background: #8A2BE2;
+    color: white;
+}
+
+/* My Travel Section */
+.my-travel {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.my-travel h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.travel-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.card {
+    flex: 1;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.tag {
+    background: #8A2BE2;
+    color: white;
+    padding: 5px 15px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* Content Sections */
+.content-sections {
+    display: flex;
+}
+
+.content-block {
+    flex: 1;
+    padding: 50px;
+    color: #333;
+}
+
+.yellow { background: #FFFF00; }
+.green { background: #00FFCC; }
+.pink { background: #FF69B4; }
+
+.content-block h3 {
+    margin-bottom: 20px;
+}
+
+.content-block button {
+    background: none;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    padding: 80px 50px;
+    gap: 50px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.about-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-content h2 {
+    color: #8A2BE2;
+    margin-bottom: 20px;
+}
+
+.about-content h3 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.role {
+    color: #666;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .travel-cards,
+    .content-sections,
+    .about {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
