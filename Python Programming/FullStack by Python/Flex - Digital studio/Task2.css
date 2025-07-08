@@ -1,0 +1,227 @@
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  color: #222;
+  background: #f8f6f4;
+}
+
+:root {
+  --max-width: 1100px;
+}
+
+/* Navbar */
+.navbar {
+  max-width: var(--max-width);
+  margin: 30px auto 0 auto;
+  background: #fff;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #b89c8b;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #b89c8b;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 420px;
+  background: url('https://img.freepik.com/free-photo/businesswoman-walking-street_23-2147650862.jpg?w=1480') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 40px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(80, 60, 40, 0.28);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  margin-top: 90px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+
+.hero-content button {
+  background: #b89c8b;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.hero-content button:hover {
+  background: #a1846e;
+  transform: translateY(-2px);
+}
+
+.slider-dots {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.slider-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e5d3c6;
+  display: inline-block;
+}
+
+.slider-dots .active {
+  background: #b89c8b;
+}
+
+/* Section Headings */
+section h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 60px;
+  letter-spacing: 1px;
+}
+
+section p {
+  text-align: center;
+  font-size: 1rem;
+  color: #7a6a5a;
+  margin: 8px 0 38px 0;
+  letter-spacing: 0.3px;
+}
+
+/* Services Section */
+.services {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.service-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin: 38px 0 60px 0;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 170px;
+  height: 170px;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s;
+}
+
+.box:hover {
+  transform: translateY(-6px) scale(1.04);
+}
+
+/* Portfolio Section */
+.portfolio {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  padding: 0 20px 70px 20px;
+}
+
+.portfolio-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.portfolio-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.13);
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    gap: 18px;
+    padding: 18px 10px;
+  }
+
+  .service-boxes {
+    gap: 18px;
+  }
+
+  .box {
+    width: 120px;
+    height: 120px;
+  }
+
+  .portfolio-grid img {
+    height: 140px;
+  }
+}
