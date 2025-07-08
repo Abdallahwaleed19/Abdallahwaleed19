@@ -1,0 +1,89 @@
+<html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 10px;
+        }
+        td {
+            padding: 5px;
+            border: 1px solid #000;
+        }
+        .title {
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        select {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td colspan="2" class="title">Registration Form</td>
+            </tr>
+            <tr>
+                <td>First name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Last name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>User name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Pass</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>Track</td>
+                <td>
+                    <select>
+                        <option value="B1" selected>B1</option>
+                        <option value="B2">B2</option>
+                        <option value="B3">B3</option>
+                        <option value="B4">B4</option>
+                        <option value="B5">B5</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" checked> Male<br>
+                    <input type="radio" name="gender"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Favorites</td>
+                <td>
+                    <input type="checkbox"> football
+                    <input type="checkbox"> basketball
+                    <input type="checkbox"> games<br>
+                    <input type="checkbox"> reading
+                    <input type="checkbox"> swimming
+                    <input type="checkbox"> Travel
+                </td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td>
+                    <textarea></textarea><br>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+        
+        <p>Choose File <input type="file"> No file chosen</p>
+    </form>
+</body>
+</html>
