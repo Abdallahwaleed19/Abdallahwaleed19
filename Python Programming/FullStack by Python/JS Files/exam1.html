@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Practice</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+    .item {
+      background: white;
+      padding: 10px;
+      margin: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .highlight {
+      background-color: yellow;
+      color: red;
+      font-weight: bold;
+    }
+
+    #output {
+      margin-top: 20px;
+      background: #fff;
+      padding: 10px;
+      border: 2px dashed #aaa;
+    }  
+  </style>
+</head>
+<body>
+
+  <h1 id="main">DOM Practice</h1>
+
+  <div class="item">Item One</div>
+  <div class="item">Item Two</div>
+  <div class="item">Item Three</div>
+
+  <input type="text" id="nameInput" value="ITI Student">
+  <br><br>
+  <button onclick="printName()">Print Name</button>
+  <button onclick="changeTitleStyle()">Change Title Style</button>
+  <button onclick="printAllItems()">Print All Items</button>
+  <button onclick="highlightItems()">Highlight Items</button>
+
+  <div id="output"><strong>Output:</strong></div>
+
+  <script src="exam1.js"></script>
+</body>
+</html>
