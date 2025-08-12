@@ -1,0 +1,30 @@
+{
+  "name": "abdallah-portfolio",
+  "version": "1.0.0",
+  "description": "Abdallah Waleed Kamal Mousa - IoT & Big Data Analytics Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Static site - no build required'",
+    "deploy": "echo 'Deploy to your hosting service'",
+    "serve": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "iot",
+    "big-data",
+    "analytics",
+    "cybersecurity",
+    "fortinet"
+  ],
+  "author": "Abdallah Waleed Kamal Mousa",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
