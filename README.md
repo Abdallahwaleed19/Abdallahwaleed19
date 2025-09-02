@@ -7,7 +7,7 @@
 </p>
 
 ---
-👨‍🎓 About Me:
+### 👨‍🎓 About Me:
 
 🎓 I am a student at the Faculty of Artificial Intelligence, Menoufia National University.
 
