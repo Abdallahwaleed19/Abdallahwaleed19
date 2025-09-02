@@ -89,6 +89,16 @@
     <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
 </p>
+---
+
+<h3 align="center">✨ Thank You for Visiting My Profile ✨</h3>
+
+<p align="center">
+  <img src="https://github.com/abhisheknaiidu/abhisheknaiidu/raw/master/code.gif" width="300" alt="Coding gif"/>
+</p>
+
+<p align="center">💡 Always open to collaboration and learning new things 🚀</p>
+
 
 
 
