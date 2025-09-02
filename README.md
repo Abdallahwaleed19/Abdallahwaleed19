@@ -8,10 +8,10 @@
 
 ---
 
-### 👨‍🎓 About Me:
-- 🚀 I am an ambitious and detail-oriented student specializing in **Internet of Things (IoT)** and **Big Data Analytics**, with a strong foundation in **.NET development**.  
-- 🌐 My passion lies in creating **smart, data-driven applications** that seamlessly connect devices, extract valuable insights, and deliver impactful solutions.  
-- 💡 I am constantly striving to enhance my **technical expertise**, combining analytical thinking with practical implementation to build **innovative systems** that address real-world challenges.  
+👨‍🎓 About Me:
+🎓 I am a student at the Faculty of Artificial Intelligence, Menoufia National University, specializing in Internet of Things (IoT) and Big Data Analytics, with a strong foundation in .NET development.
+🚀 My passion lies in creating smart, data-driven applications that seamlessly connect devices, extract valuable insights, and deliver impactful solutions.
+💡 I am constantly striving to enhance my technical expertise, combining analytical thinking with practical implementation to build innovative systems that address real-world challenges.  
 
 ---
 
