@@ -89,15 +89,21 @@
     <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
 </p>
+
 ---
 
-<h3 align="center">✨ Thank You for Visiting My Profile ✨</h3>
+<h2 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=6A5ACD&center=true&vCenter=true&width=500&lines=✨+Thank+You+for+Visiting+My+Profile+✨" alt="Typing SVG" />
+</h2>
 
 <p align="center">
-  <img src="https://github.com/abhisheknaiidu/abhisheknaiidu/raw/master/code.gif" width="300" alt="Coding gif"/>
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="400" alt="Coding gif"/>
 </p>
 
-<p align="center">💡 Always open to collaboration and learning new things 🚀</p>
+<h3 align="center" style="font-family: 'Fira Code', monospace; font-weight: bold;">
+  💡 Always open to collaboration and learning new things 🚀
+</h3>
+
 
 
 
