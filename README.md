@@ -42,5 +42,41 @@
   <img src="https://img.shields.io/badge/VS%20Code-0078D4?style=for-the-badge&logo=visual-studio-code&logoColor=white"/>
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </p>
+### 📊 GitHub Stats:
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Abdallahwaleed19&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Abdallahwaleed19&theme=tokyonight" alt="GitHub Streak" />
+</p>
+
+---
+
+### 📈 Contribution Graph:
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Abdallahwaleed19&theme=tokyo-night" alt="Contribution Graph" />
+</p>
+
+---
+
+### 🤝 Let's Connect & Collaborate!
+💡 "I’m always excited to take on new challenges and work on innovative ideas. Whether you’re looking to:"
+
+⚙️ Build robust .NET and C# applications that are scalable and efficient
+
+🐍 Develop Python solutions for automation, data handling, and problem-solving
+
+🤖 Create smart IoT projects with Arduino and sensors
+
+🔐 Design and secure networks with strong cybersecurity practices
+
+🌐 Collaborate using Git & GitHub for clean, version-controlled projects
+
+📚 Share knowledge and grow together through teamwork and innovation 
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/abdallah-waleed-885089293"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="mailto:waleedabdallah238@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <a href="https://www.instagram.com/__abdallahwaleed/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
+  <a href="https://www.facebook.com/abdallah.waleed.kamal/"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"/></a>
+</p>
 
 
